@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>个人作品集｜韦鑫梅｜华中科技大学</title>
+<meta content="韦鑫梅｜华中科技大学广告学｜个人作品集：运营、摄影、视频、平面与策划作品。" name="description"/>
+<style>
+  :root{
+    --bg:#f5f5f7;
+    --surface:#ffffff;
+    --text:#1d1d1f;
+    --muted:#6e6e73;
+    --line:rgba(0,0,0,.08);
+    --blue:#0071e3;
+    --max:1280px;
+    --radius:30px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue","PingFang SC","Microsoft YaHei",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .nav{
+    position:fixed;z-index:20;top:14px;left:50%;transform:translateX(-50%);
+    width:min(calc(100% - 28px),1180px);height:48px;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:0 18px;border:1px solid rgba(0,0,0,.07);
+    background:rgba(255,255,255,.72);backdrop-filter:saturate(180%) blur(22px);
+    border-radius:999px;box-shadow:0 8px 30px rgba(0,0,0,.06);
+  }
+  .brand{font-weight:650;letter-spacing:-.02em}
+  .navlinks{display:flex;gap:22px;font-size:13px;color:#555}
+  .navlinks a:hover{color:#000}
+  .hero{
+    min-height:100vh;display:flex;align-items:center;
+    padding:150px 24px 100px;
+    background:
+      radial-gradient(circle at 75% 30%,rgba(120,160,255,.18),transparent 30%),
+      radial-gradient(circle at 20% 70%,rgba(220,220,220,.8),transparent 28%);
+  }
+  .wrap{width:min(var(--max),100%);margin:auto}
+  .eyebrow{
+    color:var(--muted);font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:28px;
+  }
+  h1{
+    font-size:clamp(58px,10vw,132px);line-height:.9;letter-spacing:-.065em;
+    font-weight:650;margin:0;max-width:1000px;
+  }
+  .hero-sub{
+    margin-top:42px;display:flex;justify-content:space-between;gap:40px;align-items:end;
+  }
+  .hero-sub p{font-size:clamp(20px,2.4vw,30px);line-height:1.25;letter-spacing:-.025em;max-width:650px;margin:0}
+  .scroll-note{font-size:13px;color:var(--muted);white-space:nowrap}
+  section{padding:120px 24px}
+  .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:44px}
+  .section-number{font-size:14px;color:var(--muted);margin-bottom:12px}
+  h2{font-size:clamp(44px,6vw,76px);line-height:.98;letter-spacing:-.055em;margin:0;font-weight:650}
+  .section-intro{max-width:440px;color:var(--muted);font-size:16px;line-height:1.7;margin:0}
+  .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+  .card{
+    background:var(--surface);border-radius:var(--radius);overflow:hidden;
+    border:1px solid var(--line);min-height:340px;position:relative;
+    transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s;
+  }
+  .card:hover{transform:translateY(-6px);box-shadow:0 22px 60px rgba(0,0,0,.10)}
+  .visual{
+    height:260px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,#dfe3e8,#f8f8f8);
+    color:#777;font-size:13px;letter-spacing:.08em;
+  }
+  .dark .visual{background:linear-gradient(135deg,#111,#3b3b3d);color:#aaa}
+  .card-body{padding:24px 26px 28px}
+  .card-title{font-size:25px;letter-spacing:-.035em;margin:0 0 8px;font-weight:600}
+  .card-meta{font-size:13px;color:var(--muted);line-height:1.6}
+  .wide{grid-column:span 7}.small{grid-column:span 5}.third{grid-column:span 4}.half{grid-column:span 6}.full{grid-column:span 12}
+    .case-group{margin-top:64px}
+    .case-group-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:22px}
+    .case-group-kicker{font-size:13px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+    .case-group-title{font-size:clamp(30px,4vw,48px);line-height:1;letter-spacing:-.045em;margin:0;font-weight:650}
+    .case-group-desc{max-width:390px;color:var(--muted);font-size:14px;line-height:1.7;margin:0}
+    .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .case-card{background:var(--surface);border-radius:24px;overflow:hidden;border:1px solid var(--line);transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s;display:block}
+    .case-card:hover{transform:translateY(-6px);box-shadow:0 22px 60px rgba(0,0,0,.10)}
+    .case-visual{width:100%;background:var(--surface);overflow:hidden;line-height:0}
+    .case-visual img{width:100%;height:auto;display:block;object-fit:contain}
+    .case-body{padding:20px 22px 24px}
+    .case-no{font-size:11px;color:var(--muted);letter-spacing:.08em;margin-bottom:8px}
+    .case-title{font-size:21px;letter-spacing:-.03em;margin:0 0 7px;font-weight:600}
+    .case-meta{font-size:13px;color:var(--muted);line-height:1.6}
+
+  
+    .account-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+    .account-card{background:var(--surface);border-radius:24px;overflow:hidden;border:1px solid var(--line);transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s}
+    .account-card:hover{transform:translateY(-6px);box-shadow:0 22px 60px rgba(0,0,0,.10)}
+    .account-visual{width:100%;background:#fff}
+    .account-visual img{display:block;width:100%;height:auto}
+.feature{
+    background:#000;color:#fff;border-radius:36px;padding:72px;min-height:560px;
+    display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative;
+  }
+  .feature:after{
+    content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+    background:radial-gradient(circle,rgba(100,150,255,.42),transparent 65%);
+    right:-100px;bottom:-180px;filter:blur(10px);
+  }
+  .feature>*{position:relative;z-index:1}
+  .feature h3{font-size:clamp(44px,6vw,80px);letter-spacing:-.06em;line-height:.95;margin:0;max-width:760px}
+  .feature p{max-width:560px;color:#aaa;line-height:1.7}
+  .index{
+    display:grid;grid-template-columns:repeat(5,1fr);gap:10px;
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  .index a{padding:30px 24px 34px;transition:padding .3s;min-width:0}
+  .index a:hover{padding-left:24px}
+  .index .n{font-size:16px;color:var(--muted);font-weight:700;display:block;margin-bottom:20px}
+  .index .t{font-size:24px;letter-spacing:-.02em;white-space:nowrap}
+  .photo-wall{
+    background:#fff;
+    border:1px solid #e9e9e9;
+    border-radius:24px;
+    padding:8px;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    overflow:hidden;
+  }
+  .photo-mosaic-row{display:flex;gap:6px;align-items:stretch;min-width:0}
+  .photo-mosaic-row .photo-block{flex:1 1 0;min-width:0}
+  .photo-block{
+    position:relative;background:#fff;overflow:hidden;border-radius:14px;border:1px solid #ededed;
+    box-shadow:0 1px 0 rgba(0,0,0,.02);
+    transform:perspective(1000px) translate3d(0,0,0) rotateX(0deg) rotateY(0deg);
+    transform-style:preserve-3d;
+    will-change:transform,box-shadow;
+    transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s cubic-bezier(.2,.8,.2,1),border-color .35s ease;
+    z-index:1;
+  }
+  .photo-block::after{
+    content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;
+    background:linear-gradient(120deg,transparent 25%,rgba(255,255,255,.34) 48%,transparent 70%);
+    transform:translateX(-130%);opacity:0;transition:transform .75s cubic-bezier(.2,.8,.2,1),opacity .25s ease;
+  }
+  .photo-block-media{display:flex;justify-content:center;align-items:center;background:#fff;padding:0;line-height:0;transform:translateZ(0);transition:filter .45s ease,transform .45s cubic-bezier(.2,.8,.2,1)}
+  .photo-block-media img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;background:#fff;transform:translate3d(0,0,0);transition:transform .55s cubic-bezier(.2,.8,.2,1),filter .45s ease}
+  .photo-block:hover{
+    transform:perspective(1000px) translate3d(0,-8px,0) rotateX(1deg) rotateY(-.6deg);
+    box-shadow:0 22px 42px rgba(0,0,0,.14),0 7px 14px rgba(0,0,0,.08);
+    border-color:#dcdcdc;z-index:8;
+  }
+  .photo-block:hover::after{transform:translateX(130%);opacity:1}
+  .photo-block:hover .photo-block-media{transform:translate3d(0,-2px,0);filter:saturate(1.035) contrast(1.015)}
+  .photo-block:hover .photo-block-media img{transform:translate3d(0,-1px,0);filter:saturate(1.025)}
+  .photo-block:focus-within{transform:perspective(1000px) translate3d(0,-6px,0);box-shadow:0 18px 36px rgba(0,0,0,.12);z-index:8}
+  @media (prefers-reduced-motion:reduce){
+    .photo-block,.photo-block-media,.photo-block-media img,.photo-block::after{transition:none!important}
+  }
+  .photo-block-info{min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 9px 8px;border-top:1px solid #ededed;background:#fff}
+  .photo-block-index{font-size:8px;letter-spacing:.12em;color:#9a9a9a;font-weight:700;white-space:nowrap}
+  .photo-block-title{margin-top:2px;font-size:11px;letter-spacing:-.01em;font-weight:600;color:#222;white-space:nowrap}
+  .photo-block-note{font-size:8px;color:#9a9a9a;line-height:1.35;text-align:right;max-width:58%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .photo-block:nth-child(even) .photo-block-media,.photo-block:nth-child(odd) .photo-block-media,.photo-block:nth-child(3n) .photo-block-media{background:#fff}
+  .photo-block:nth-child(3n) .photo-block-note,.photo-block:nth-child(3n) .photo-block-index{color:#9a9a9a}
+  .photo-block:nth-child(3n) .photo-block-title{color:#222}
+  .photo-block:nth-child(3n) .photo-block-info{border-top-color:#ededed;background:#fff}
+  .photo-mosaic-row:nth-child(2) .photo-block:nth-child(2){flex:1.08 1 0}
+  .photo-mosaic-row:nth-child(2) .photo-block:nth-child(3){flex:.92 1 0}
+  .photo-mosaic-row:nth-child(3) .photo-block:nth-child(1){flex:1.08 1 0}
+  .photo-mosaic-row:nth-child(3) .photo-block:nth-child(2){flex:.96 1 0}
+  .photo-mosaic-row:nth-child(3) .photo-block:nth-child(3){flex:.96 1 0}
+  .photo{
+    min-height:520px;border-radius:32px;background:linear-gradient(145deg,#d9d9d9,#f7f7f7);
+    display:flex;align-items:end;padding:28px;overflow:hidden;position:relative;
+  }
+  .photo.tall{min-height:700px}
+  .photo span{font-size:13px;color:#555;position:relative;z-index:2}
+  .photo:before{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(160deg,rgba(255,255,255,.35),transparent 45%,rgba(0,0,0,.12));
+  }
+  .video-link{
+    display:inline-flex;align-items:center;gap:8px;margin-top:16px;
+    color:var(--blue);font-size:14px;font-weight:500;
+  }
+  .footer{
+    padding:100px 24px 40px;background:#000;color:#fff;
+  }
+  .footer h2{max-width:850px}
+  .footer-bottom{margin-top:100px;padding-top:20px;border-top:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;color:#888;font-size:12px}
+  .reveal{opacity:0;transform:translateY(25px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.show{opacity:1;transform:none}
+  @media(max-width:800px){
+    .nav{top:10px}.navlinks{display:none}
+    .hero{padding-top:130px}.hero-sub{display:block}.scroll-note{margin-top:24px}
+    section{padding:80px 18px}.section-head{display:block}
+    .section-intro{margin-top:24px}
+    .index{grid-template-columns:1fr 1fr}
+    .wide,.small,.third,.half,.full{grid-column:span 12}
+    .case-group-head{display:block}.case-group-desc{margin-top:18px}.case-grid{grid-template-columns:1fr}
+    .feature{padding:40px;min-height:460px}
+    .photo-wall{padding:5px;gap:5px;border-radius:18px}
+    .photo-mosaic-row{gap:5px}
+    .photo-block{border-radius:10px}
+    .photo-block-info{min-height:28px;padding:5px 6px}
+    .photo-block-title{font-size:9px}
+    .photo-block-index{font-size:6px}
+    .photo-block-note{font-size:6px;max-width:48%}
+    .footer-bottom{display:block}.footer-bottom span{display:block;margin-top:10px}
+  }
+
+  /* Video portfolio: compact, white, full-image presentation */
+  .video-mosaic{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:stretch}
+  .video-card{grid-column:span 1;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;position:relative;box-shadow:0 8px 24px rgba(0,0,0,.055);transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s, border-color .45s;display:flex;flex-direction:column;min-width:0}
+  .video-card:nth-child(1),.video-card:nth-child(2),.video-card:nth-child(3){grid-column:span 1;margin-top:0}
+  .video-card:hover{transform:translateY(-7px);box-shadow:0 24px 55px rgba(0,0,0,.13);border-color:rgba(0,0,0,.16)}
+  .video-cover{position:relative;background:#fafafa;overflow:hidden;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center}
+  .video-cover img{display:block;width:100%;height:100%;max-width:100%;object-fit:contain;transition:transform .65s cubic-bezier(.2,.8,.2,1),filter .65s}
+  .video-card:hover .video-cover img{transform:scale(1.025);filter:saturate(1.04) contrast(1.02)}
+  .video-cover:after{content:'VIDEO';position:absolute;left:12px;top:12px;padding:5px 8px;border-radius:999px;background:rgba(255,255,255,.88);backdrop-filter:blur(8px);font-size:9px;letter-spacing:.12em;color:#222;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+  .video-play{position:absolute;right:12px;bottom:12px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.92);box-shadow:0 8px 22px rgba(0,0,0,.16);font-size:15px;color:#111;transition:transform .35s,background .35s}
+  .video-card:hover .video-play{transform:scale(1.08);background:#fff}
+  .video-info{padding:13px 15px 15px;display:flex;justify-content:space-between;gap:12px;align-items:end}
+  .video-index{font-size:9px;color:#999;letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}
+  .video-title{font-size:17px;line-height:1.1;letter-spacing:-.03em;font-weight:600;margin:0}
+  .video-note{font-size:10px;color:#888;line-height:1.5;text-align:right;max-width:45%}
+  @media(max-width:900px){
+    .video-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .video-card,.video-card:nth-child(1),.video-card:nth-child(2),.video-card:nth-child(3){grid-column:span 1;margin-top:0}
+  }
+  @media(max-width:600px){
+    .video-mosaic{grid-template-columns:1fr}
+    .video-card,.video-card:nth-child(1),.video-card:nth-child(2),.video-card:nth-child(3){grid-column:span 1}
+    .video-info{padding:11px 12px 12px}
+    .video-title{font-size:15px}
+  }
+
+
+  /* Graphic works — Apple-inspired editorial gallery */
+  .graphic-groups{display:flex;flex-direction:column;gap:92px}
+  .graphic-group{display:block}
+  .graphic-group-head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:24px}
+  .graphic-kicker{font-size:12px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:9px}
+  .graphic-title{margin:0;font-size:clamp(30px,4vw,48px);line-height:1;letter-spacing:-.045em;font-weight:650}
+  .graphic-desc{max-width:420px;margin:0;color:var(--muted);font-size:14px;line-height:1.65;text-align:right}
+  .ps-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}
+  .graphic-card{background:#fff;border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.045);transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s,border-color .45s;min-width:0}
+  .graphic-card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,.11);border-color:rgba(0,0,0,.14)}
+  .graphic-image{background:#f8f8fa;line-height:0;overflow:hidden}
+  .graphic-image img{display:block;width:100%;height:auto;object-fit:contain;image-rendering:auto;transform:translateZ(0);transition:transform .6s cubic-bezier(.2,.8,.2,1),filter .6s}
+  .graphic-card:hover .graphic-image img{transform:scale(1.012);filter:saturate(1.015) contrast(1.008)}
+  .graphic-caption{display:flex;justify-content:space-between;gap:18px;align-items:end;padding:18px 20px 20px}
+  .graphic-caption strong{font-size:18px;letter-spacing:-.025em;font-weight:600}
+  .graphic-caption span{font-size:10px;letter-spacing:.1em;color:#999;white-space:nowrap}
+  .proposal-gallery{display:grid;grid-template-columns:1fr;gap:18px}
+  .proposal-card .graphic-image{background:#fff;padding:0}
+  .proposal-card .graphic-image img{width:100%;height:auto;max-height:none}
+  .wechat-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;align-items:start}
+  .wechat-card{border-radius:20px}
+  .wechat-card .graphic-image{background:#fff}
+  .wechat-card .graphic-image img{width:100%;height:auto;max-height:none}
+  .wechat-card .graphic-caption{padding:13px 14px 15px;align-items:center}
+  .wechat-card .graphic-caption strong{font-size:14px}
+  .wechat-card .graphic-caption span{font-size:8px}
+  @media(max-width:900px){
+    .graphic-groups{gap:72px}.graphic-group-head{display:block}.graphic-desc{text-align:left;margin-top:14px}
+    .wechat-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  }
+  @media(max-width:620px){
+    .ps-gallery{grid-template-columns:1fr}.wechat-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+    .graphic-card{border-radius:18px}.wechat-card{border-radius:14px}
+    .graphic-caption{padding:14px 15px 16px}.graphic-caption strong{font-size:16px}.graphic-caption span{font-size:8px}
+    .wechat-card .graphic-caption{padding:10px}.wechat-card .graphic-caption strong{font-size:12px}
+  }
+
+
+  /* Revision: tighter PS masonry + clearer WeChat long-form display */
+  .ps-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}
+  .ps-column{display:flex;flex-direction:column;gap:18px;min-width:0}
+  .wechat-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}
+  .wechat-card .graphic-image{display:flex;justify-content:center;align-items:flex-start;background:#fff}
+  .wechat-card .graphic-image img{width:100%;height:auto;max-height:none;image-rendering:auto;filter:contrast(1.025) saturate(1.01);backface-visibility:hidden}
+  @media(max-width:900px){.wechat-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}}
+  @media(max-width:620px){.ps-gallery{grid-template-columns:1fr}.wechat-gallery{grid-template-columns:1fr;gap:12px}}
+
+/* 公众号排版修复：确保板块显示，并使用原始高清长图 */
+#graphic .graphic-group.reveal{opacity:1;transform:none}
+.wechat-gallery{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px!important;align-items:start!important}
+.wechat-card{align-self:start!important}
+.wechat-card .graphic-image{background:#fff!important;overflow:hidden!important}
+.wechat-card .graphic-image img{display:block!important;width:100%!important;height:auto!important;max-width:none!important;object-fit:contain!important;image-rendering:auto!important}
+@media(max-width:700px){.wechat-gallery{grid-template-columns:1fr!important}}
+
+/* 运营作品：三个达人视频整卡可点击 */
+#operation .case-group .case-card[href]{cursor:pointer;color:inherit;text-decoration:none;}
+
+/* Desktop comfort pass: preserve the existing mobile layout. */
+@media (min-width: 801px) {
+  :root { --max: 1220px; --radius: 28px; }
+
+  .nav {
+    top: 12px;
+    width: min(calc(100% - 36px), 1100px);
+    height: 46px;
+    padding: 0 18px;
+  }
+  .brand { font-size: 15px; }
+  .navlinks { gap: 20px; font-size: 13px; }
+
+  .hero {
+    min-height: 96vh;
+    padding: 138px 28px 92px;
+  }
+  .eyebrow { margin-bottom: 22px; }
+  h1 { font-size: clamp(58px, 9vw, 118px); max-width: 940px; }
+  .hero-sub { margin-top: 38px; }
+  .hero-sub p { font-size: clamp(19px, 2.2vw, 28px); max-width: 620px; }
+
+  section { padding: 106px 28px; }
+  .section-head { margin-bottom: 40px; }
+  h2 { font-size: clamp(44px, 5.5vw, 70px); }
+  .case-group { margin-top: 58px; }
+  .graphic-groups { gap: 82px; }
+
+  #photo .wrap { max-width: 1150px; }
+  #photo h2 { font-size: clamp(42px, 5.2vw, 66px); }
+  #photo .section-head { margin-bottom: 36px; }
+  .photo-wall { padding: 7px; gap: 5px; border-radius: 22px; }
+  .photo-mosaic-row { gap: 5px; }
+  .photo-block { border-radius: 12px; }
+
+  .feature { padding: 66px; min-height: 530px; border-radius: 32px; }
+  .footer { padding: 92px 28px 38px; }
+  .footer-bottom { margin-top: 88px; }
+}
+
+/* Large-view compensation: keeps the portfolio readable when the browser
+   exposes an unusually wide CSS viewport (including heavily zoomed-out views). */
+@media (min-width: 1800px) {
+  :root { --max: clamp(1440px, 64vw, 2200px); --radius: 32px; }
+
+  .nav {
+    width: min(calc(100% - 72px), 1900px);
+    height: 54px;
+    padding: 0 24px;
+  }
+  .brand { font-size: 18px; }
+  .navlinks { gap: 28px; font-size: 15px; }
+
+  .hero { min-height: 96vh; padding: 160px 5vw 110px; }
+  .hero .wrap { width: min(var(--max), 100%); }
+  .eyebrow { font-size: 17px; margin-bottom: 30px; }
+  h1 { font-size: clamp(120px, 6.2vw, 190px); max-width: 1600px; }
+  .hero-sub { margin-top: 48px; }
+  .hero-sub p { font-size: clamp(30px, 1.45vw, 42px); max-width: 900px; }
+  .scroll-note { font-size: 16px; }
+
+  section { padding: 132px 5vw; }
+  .section-head { margin-bottom: 54px; }
+  .section-number { font-size: 17px; }
+  h2 { font-size: clamp(76px, 3.5vw, 104px); }
+  .section-intro { max-width: 620px; font-size: 20px; }
+  .index .n { font-size: 18px; }
+  .index .t { font-size: 30px; }
+  .index a { padding: 38px 30px 44px; }
+
+  .case-group { margin-top: 76px; }
+  .case-group-title,.graphic-title { font-size: clamp(48px, 2.6vw, 72px); }
+  .case-group-desc,.graphic-desc { max-width: 560px; font-size: 18px; }
+  .case-grid,.account-grid { gap: 24px; }
+  .case-body { padding: 26px 28px 30px; }
+  .case-title { font-size: 27px; }
+  .case-meta { font-size: 16px; }
+
+  #photo .wrap { max-width: min(2000px, 64vw); }
+  #photo h2 { font-size: clamp(76px, 3.4vw, 100px); }
+  .photo-wall { padding: 10px; gap: 8px; }
+  .photo-mosaic-row { gap: 8px; }
+  .photo-block-info { min-height: 48px; padding: 10px 12px; }
+  .photo-block-title { font-size: 15px; }
+  .photo-block-index,.photo-block-note { font-size: 10px; }
+
+  .video-title { font-size: 23px; }
+  .video-note { font-size: 13px; }
+  .graphic-caption strong { font-size: 23px; }
+  .feature { padding: 86px; min-height: 620px; }
+  .footer { padding: 120px 5vw 50px; }
+}
+
+/* Photography full-series gallery */
+.photo-block[data-gallery]{cursor:pointer}
+.photo-block[data-gallery]::before{
+  content:"点击查看完整组图";position:absolute;right:10px;top:10px;z-index:5;
+  padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.88);
+  backdrop-filter:blur(10px);font-size:9px;letter-spacing:.06em;color:#222;
+  box-shadow:0 5px 16px rgba(0,0,0,.09);opacity:0;transform:translateY(-3px);
+  transition:opacity .25s ease,transform .25s ease;
+}
+.photo-block[data-gallery]:hover::before,.photo-block[data-gallery]:focus-visible::before{opacity:1;transform:none}
+.gallery-modal{position:fixed;inset:0;z-index:1000;display:none;overflow-y:auto;background:#111114;color:#fff;overscroll-behavior:contain}
+.gallery-modal.is-open{display:block}
+.gallery-topbar{position:sticky;top:0;z-index:3;height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 24px;background:rgba(17,17,20,.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.12)}
+.gallery-heading{min-width:0}.gallery-kicker{font-size:9px;letter-spacing:.14em;color:#999}.gallery-title{font-size:16px;font-weight:600;letter-spacing:-.02em;margin-top:3px}
+.gallery-actions{display:flex;align-items:center;gap:14px}.gallery-total{font-size:12px;color:#aaa;white-space:nowrap}
+.gallery-close{width:36px;height:36px;border:0;border-radius:50%;color:#fff;background:rgba(255,255,255,.12);cursor:pointer;display:grid;place-items:center;font-size:22px;line-height:1;transition:background .2s,transform .2s}
+.gallery-close:hover{background:rgba(255,255,255,.22);transform:scale(1.04)}
+.gallery-page{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:32px 0 54px}
+.gallery-intro{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:24px;color:#aaa;font-size:12px;line-height:1.65}
+.gallery-intro p{max-width:560px;margin:0}.gallery-scroll-note{white-space:nowrap;color:#777}
+.gallery-grid{columns:3 300px;column-gap:12px}
+.gallery-item{display:block;width:100%;margin:0 0 12px;break-inside:avoid;border-radius:12px;overflow:hidden;background:#1b1b1e;border:1px solid rgba(255,255,255,.08)}
+.gallery-item img{display:block;width:100%;height:auto;object-fit:contain;background:#18181b}
+.gallery-item figcaption{display:flex;justify-content:space-between;gap:12px;padding:9px 11px 10px;color:#aaa;font-size:9px;letter-spacing:.06em}
+.gallery-item figcaption span:last-child{color:#666}
+body.gallery-lock{overflow:hidden}
+@media(max-width:800px){
+  .photo-block[data-gallery]::before{opacity:1;transform:none;content:"查看完整组图"}
+  .gallery-topbar{height:58px;padding:0 14px}.gallery-title{font-size:14px}.gallery-kicker{font-size:8px}
+  .gallery-page{width:calc(100% - 20px);padding:20px 0 34px}.gallery-intro{display:block;margin-bottom:16px}.gallery-scroll-note{margin-top:6px}
+  .gallery-grid{columns:1;column-gap:0}.gallery-item{margin-bottom:10px;border-radius:10px}
+}
+@media(min-width:801px) and (max-width:1080px){.gallery-grid{columns:2 280px}}
+@media(prefers-reduced-motion:reduce){.gallery-close{transition:none}}
+
+/* Wisteria desktop balancing: move image 11 to the left column while
+   preserving the original 1–11 reading order on mobile. */
+@media(min-width:801px){
+  #wisteriaGalleryGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-count:unset;gap:12px;align-items:start}
+  #wisteriaGalleryGrid .gallery-item{margin:0}
+  #wisteriaGalleryGrid .gallery-item:nth-child(1){grid-column:1;grid-row:1}
+  #wisteriaGalleryGrid .gallery-item:nth-child(2){grid-column:1;grid-row:2}
+  #wisteriaGalleryGrid .gallery-item:nth-child(3){grid-column:1;grid-row:3}
+  #wisteriaGalleryGrid .gallery-item:nth-child(11){grid-column:1;grid-row:4}
+  #wisteriaGalleryGrid .gallery-item:nth-child(4){grid-column:2;grid-row:1}
+  #wisteriaGalleryGrid .gallery-item:nth-child(5){grid-column:2;grid-row:2}
+  #wisteriaGalleryGrid .gallery-item:nth-child(6){grid-column:2;grid-row:3}
+  #wisteriaGalleryGrid .gallery-item:nth-child(7){grid-column:3;grid-row:1}
+  #wisteriaGalleryGrid .gallery-item:nth-child(8){grid-column:3;grid-row:2}
+  #wisteriaGalleryGrid .gallery-item:nth-child(9){grid-column:3;grid-row:3}
+  #wisteriaGalleryGrid .gallery-item:nth-child(10){grid-column:3;grid-row:4}
+}
+
+
+/* Small interaction note beside selected section titles. */
+.clickable-hint{
+  display:inline-block;
+  margin-left:14px;
+  color:var(--muted);
+  font-size:clamp(13px,1.15vw,17px);
+  line-height:1.3;
+  font-weight:500;
+  letter-spacing:0;
+  white-space:nowrap;
+  vertical-align:middle;
+}
+@media(max-width:600px){
+  .clickable-hint{display:block;margin:9px 0 0;font-size:12px}
+}
+
+</style>
+<meta content="个人作品集｜韦鑫梅｜华中科技大学" property="og:title"/><meta content="运营、摄影、视频、平面与策划作品集" property="og:description"/><meta content="website" property="og:type"/></head>
+<body>
+<nav class="nav">
+<a class="brand" href="#top">PORTFOLIO</a>
+<div class="navlinks">
+<a href="#work">作品</a>
+
+<a href="#contact">联系</a>
+</div>
+</nav>
+<header class="hero" id="top">
+<div class="wrap reveal">
+<div class="eyebrow">Creative Portfolio · 2026</div>
+<h1>个人作品集</h1>
+<div class="hero-sub">
+<p>韦鑫梅<br/>华中科技大学 广告学</p>
+<div class="scroll-note">↓ SCROLL TO EXPLORE</div>
+</div>
+</div>
+</header>
+<section id="work">
+<div class="wrap">
+<div class="section-head reveal">
+<div>
+<div class="section-number">00 / CONTENTS</div>
+<h2>目录</h2>
+</div>
+</div>
+<div class="index reveal">
+<a href="#operation"><span class="n">01</span><span class="t">运营作品</span></a>
+<a href="#account"><span class="n">02</span><span class="t">个人摄影账号</span></a>
+<a href="#photo"><span class="n">03</span><span class="t">摄影作品</span></a>
+<a href="#video"><span class="n">04</span><span class="t">视频作品</span></a>
+<a href="#graphic"><span class="n">05</span><span class="t">平面作品</span></a>
+</div>
+</div>
+</section>
+<section id="operation">
+<div class="wrap">
+<div class="section-head reveal">
+<div><div class="section-number">01 / OPERATION</div><h2>运营作品</h2></div>
+</div>
+<div class="case-group reveal">
+<div class="case-group-head">
+<div>
+<div class="case-group-kicker">01 / MIDEA DISHWASHER</div>
+<h3 class="case-group-title">美的洗碗机推广运营<span class="clickable-hint">（均可点击跳转）</span></h3>
+</div>
+</div>
+<div class="case-grid">
+<a aria-label="打开肆只猫（改造中）的小红书视频" class="case-card" href="https://www.xiaohongshu.com/explore/6a38d7740000000021009498?xsec_token=ABEEmz3VSEbJ8B_NaY2G5IeclW0dlUQJnfAsudvcUbklE=&amp;xsec_source=pc_search" rel="noopener noreferrer" target="_blank"><div class="case-visual"><img alt="美的洗碗机推广运营截图 1" src="assets/images/image-001.webp"/></div></a>
+<a aria-label="打开是赵赵呀~的小红书视频" class="case-card" href="https://www.xiaohongshu.com/explore/6a530a200000000008032998?xsec_token=ABAQqcu7zlZO7D5iSxt1ntyqcnVlnVlQ1aQ3PgLYsYnLI=&amp;xsec_source=pc_search" rel="noopener noreferrer" target="_blank"><div class="case-visual"><img alt="美的洗碗机推广运营截图 2" src="assets/images/image-002.webp"/></div></a>
+<a aria-label="打开梁百万有个家的小红书视频" class="case-card" href="https://www.xiaohongshu.com/explore/6a38d048000000000701311b?xsec_token=ABEEmz3VSEbJ8B_NaY2G5IeYmJMUqzyVnjT4oRQFLZnNs=&amp;xsec_source=pc_search" rel="noopener noreferrer" target="_blank"><div class="case-visual"><img alt="美的洗碗机推广运营截图 3" src="assets/images/image-003.webp"/></div></a>
+</div>
+</div>
+<div class="case-group reveal">
+<div class="case-group-head">
+<div>
+<div class="case-group-kicker">02 / LINGOACE OFFICIAL ACCOUNT</div>
+<h3 class="case-group-title">LingoAce 官号运营<span class="clickable-hint">（均可点击跳转）</span></h3>
+</div>
+</div>
+<div class="case-grid">
+<a aria-label="打开 LingoAce 左侧笔记" class="case-card" href="https://www.xiaohongshu.com/explore/688c73e50000000023021f0b?xsec_token=AB5gU5wCsYkG6AZTagaMXQFOW5v6E57JYi7W4a5j0nW4Q=&amp;xsec_source=pc_search" rel="noopener noreferrer" target="_blank"><div class="case-visual"><img alt="LingoAce 官号运营截图 1" src="assets/images/image-004.webp"/></div></a>
+<a aria-label="打开 LingoAce 中间笔记：趣味英语“🐟”你相遇" class="case-card" href="https://www.xiaohongshu.com/explore/688c72df000000002302c025?xsec_token=AB5gU5wCsYkG6AZTagaMXQFDe9sZa2qVRw1cUAhDanaPM=&amp;xsec_source=pc_search" rel="noopener noreferrer" target="_blank"><div class="case-visual"><img alt="LingoAce 官号运营截图 2" src="assets/images/image-005.webp"/></div></a>
+<a aria-label="打开 LingoAce 右侧笔记" class="case-card" href="https://www.xiaohongshu.com/explore/68875748000000002203fc47?xsec_token=ABTU21hW7C_0dPaNb7TArWjG94ScShDDAzSazyXF5w-fs=&amp;xsec_source=pc_search" rel="noopener noreferrer" target="_blank"><div class="case-visual"><img alt="LingoAce 官号运营截图 3" src="assets/images/image-006.webp"/></div></a>
+</div>
+</div>
+</div>
+</section>
+<section id="account">
+<div class="wrap">
+<div class="section-head reveal">
+<div><div class="section-number">02 / PERSONAL ACCOUNT</div><h2>个人摄影账号运营<span class="clickable-hint">（均可点击跳转）</span></h2></div>
+</div>
+<div class="account-grid reveal">
+<a aria-label="打开小红书作品：华科｜如何在阴天拍紫藤萝" class="account-card" href="https://www.xiaohongshu.com/explore/67f347c9000000001c033a46?xsec_token=ABX0qtwp5TuuJRVHpM1HpgOxbO2LDabb9w9-fDqsV7jdI=&amp;xsec_source=pc_user" rel="noopener noreferrer" target="_blank"><div class="account-visual"><img alt="个人摄影账号运营截图 01" src="assets/images/image-007.webp"/></div></a>
+<a aria-label="打开小红书作品：秋日华科一隅｜怎么拍出秋日发光感" class="account-card" href="https://www.xiaohongshu.com/explore/690d6f630000000007032515?xsec_token=ABnpo36M6u633hDVEdt8zh0AjqXb-wQ24dbpcP9tibJ-0=&amp;xsec_source=pc_user" rel="noopener noreferrer" target="_blank"><div class="account-visual"><img alt="个人摄影账号运营截图 02" src="assets/images/image-008.jpg"/></div></a>
+<a aria-label="打开小红书作品：华科女摄｜当我可以驾驭光" class="account-card" href="https://www.xiaohongshu.com/explore/6822d4bc0000000023002334?xsec_token=ABrCSwEg3EciouKAIwGxUI5gAxjpo2BhppGnmKVb5RyTI=&amp;xsec_source=pc_user" rel="noopener noreferrer" target="_blank"><div class="account-visual"><img alt="个人摄影账号运营截图 03" src="assets/images/image-009.webp"/></div></a>
+</div>
+</div>
+</section>
+<section id="photo">
+<div class="wrap">
+<div class="section-head reveal">
+<div><div class="section-number">03 / PHOTOGRAPHY</div><h2>摄影作品<span class="clickable-hint">（均可点击跳转）</span></h2></div>
+<p class="section-intro"></p>
+</div>
+<div class="photo-wall">
+<div class="photo-mosaic-row">
+<article class="photo-block reveal" data-gallery="snow-warm-light" role="button" tabindex="0" aria-label="查看 Snow / Warm Light 全部 9 张样片">
+<div class="photo-block-media"><img alt="摄影作品 01" src="assets/images/image-010.webp"/></div>
+<div class="photo-block-info">
+<div>
+<div class="photo-block-index">PHOTOGRAPHY / 01</div>
+<div class="photo-block-title">Snow / Warm Light</div>
+</div>
+<div class="photo-block-note">夜色、雪花与暖光，记录冬日里一瞬间的温度。</div>
+</div>
+</article>
+<article class="photo-block reveal" data-gallery="autumn-low-angle" role="button" tabindex="0" aria-label="查看 Autumn / Low Angle 全部 10 张样片">
+<div class="photo-block-media"><img alt="摄影作品 02" src="assets/images/image-011.jpg"/></div>
+<div class="photo-block-info">
+<div>
+<div class="photo-block-index">PHOTOGRAPHY / 02</div>
+<div class="photo-block-title">Autumn / Low Angle</div>
+</div>
+<div class="photo-block-note">金黄秋叶与低机位视角，强调季节、色彩与人物关系。</div>
+</div>
+</article>
+<article class="photo-block reveal" data-gallery="spring-flower-shadow" role="button" tabindex="0" aria-label="查看 Spring / Flower Shadow 全部 12 张样片">
+<div class="photo-block-media"><img alt="摄影作品 03" src="assets/images/image-012.webp"/></div>
+<div class="photo-block-info">
+<div>
+<div class="photo-block-index">PHOTOGRAPHY / 03</div>
+<div class="photo-block-title">Spring / Flower Shadow</div>
+</div>
+<div class="photo-block-note">花影、侧光与人物轮廓，捕捉春日里柔和的光线。</div>
+</div>
+</article>
+</div>
+<div class="photo-mosaic-row">
+<article class="photo-block reveal" data-gallery="water-stillness" role="button" tabindex="0" aria-label="查看 Water / Stillness 全部 11 张样片">
+<div class="photo-block-media"><img alt="摄影作品 04" src="assets/images/image-013.webp"/></div>
+<div class="photo-block-info">
+<div>
+<div class="photo-block-index">PHOTOGRAPHY / 04</div>
+<div class="photo-block-title">Water / Stillness</div>
+</div>
+<div class="photo-block-note">湖面反光、木船与大片花野，以环境叙事人物。</div>
+</div>
+</article>
+<article class="photo-block reveal" data-gallery="orange-summer-color" role="button" tabindex="0" aria-label="查看 Orange / Summer Color 全部 9 张样片">
+<div class="photo-block-media"><img alt="摄影作品 05" src="assets/images/image-014.webp"/></div>
+<div class="photo-block-info">
+<div>
+<div class="photo-block-index">PHOTOGRAPHY / 05</div>
+<div class="photo-block-title">Orange / Summer Color</div>
+</div>
+<div class="photo-block-note">高饱和橙色与蓝色形成视觉对撞，强调明快与生命力。</div>
+</div>
+</article>
+<article class="photo-block reveal" data-gallery="forest-daylight" role="button" tabindex="0" aria-label="查看 White / Daylight 全部 11 张样片">
+<div class="photo-block-media"><img alt="摄影作品 06" src="assets/images/image-015.webp"/></div>
+<div class="photo-block-info">
+<div>
+<div class="photo-block-index">PHOTOGRAPHY / 06</div>
+<div class="photo-block-title">White / Daylight</div>
+</div>
+<div class="photo-block-note">白色服装与自然光融合，呈现轻盈、安静的氛围。</div>
+</div>
+</article>
+<article class="photo-block reveal" data-gallery="bloom-reflection" role="button" tabindex="0" aria-label="查看 Bloom / Reflection 全部 12 张样片">
+<div class="photo-block-media"><img alt="摄影作品 07" src="assets/images/image-016.webp"/></div>
+<div class="photo-block-info">
+<div>
+<div class="photo-block-index">PHOTOGRAPHY / 07</div>
+<div class="photo-block-title">Bloom / Reflection</div>
+</div>
+<div class="photo-block-note">镜面、花枝与笑容交叠，让人物与环境产生互动。</div>
+</div>
+</article>
+</div>
+<div class="photo-mosaic-row">
+<article class="photo-block reveal" data-gallery="wisteria-soft-focus" role="button" tabindex="0" aria-label="查看 Wisteria / Soft Focus 全部 11 张样片">
+<div class="photo-block-media"><img alt="摄影作品 08" src="assets/images/image-017.webp"/></div>
+<div class="photo-block-info">
+<div>
+<div class="photo-block-index">PHOTOGRAPHY / 08</div>
+<div class="photo-block-title">Wisteria / Soft Focus</div>
+</div>
+<div class="photo-block-note">紫色花藤与白裙形成柔焦层次，强调梦幻感与空气感。</div>
+</div>
+</article>
+<article class="photo-block reveal" data-gallery="blue-portrait" role="button" tabindex="0" aria-label="查看 Blue / Portrait 全部 8 张样片">
+<div class="photo-block-media"><img alt="摄影作品 09" src="assets/images/image-018.webp"/></div>
+<div class="photo-block-info">
+<div>
+<div class="photo-block-index">PHOTOGRAPHY / 09</div>
+<div class="photo-block-title">Blue / Portrait</div>
+</div>
+<div class="photo-block-note">低调暗背景与蓝色围巾，以明暗关系塑造人物情绪。</div>
+</div>
+</article>
+<article class="photo-block reveal" data-gallery="black-white-quiet" role="button" tabindex="0" aria-label="查看 Black & White / Quiet 全部 10 张样片">
+<div class="photo-block-media"><img alt="摄影作品 10" src="assets/images/image-019.webp"/></div>
+<div class="photo-block-info">
+<div>
+<div class="photo-block-index">PHOTOGRAPHY / 10</div>
+<div class="photo-block-title">Black &amp; White / Quiet</div>
+</div>
+<div class="photo-block-note">黑白服装、树影与书本，呈现克制、安静的肖像气质。</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section id="video">
+<div class="wrap">
+<div class="section-head reveal">
+<div><div class="section-number">04 / VIDEO</div><h2>视频作品<span class="clickable-hint">（均可点击跳转）</span></h2></div>
+<p class="section-intro"></p>
+</div>
+<div class="video-mosaic reveal">
+<a aria-label="播放 AIGC作品《九色劫》" class="video-card" href="https://jimeng.jianying.com/ai-tool/work-detail/7550917465115561216?share_campaign_key=dreamina_invite_fission&amp;share_category=share&amp;share_sec_did=MS4wLjACAAAAKCRnKZf9iqf59MvSrCKHhexddLJoVB-J01eLZ3vC7t49d5OKuEoqset8er-oQpmo&amp;share_sec_uid=MS4wLjABAAAAZPioykz4WnGFYOhTar8IrTRzXX_U5RgGJDcbKmA4pmYWdA94L-WizzeNvvPicDbm&amp;share_source_action=wechat&amp;share_way=token&amp;story_id=7550917465115561216&amp;workDetailType=ShowcaseVideo&amp;itemType=210" rel="noopener noreferrer" target="_blank">
+<div class="video-cover"><img alt="视频作品 01：壁画绘制" src="assets/images/image-020.png"/><span aria-hidden="true" class="video-play">▶</span></div>
+<div class="video-info"><div><div class="video-index">VIDEO / 01</div><h3 class="video-title">AIGC作品《九色劫》</h3></div></div>
+</a>
+<a class="video-card" href="https://www.bilibili.com/video/BV13oQJBqEGa/" rel="noopener noreferrer" target="_blank">
+<div class="video-cover"><img alt="视频作品 02：日历手绘" src="assets/images/image-021.jpg"/><span aria-hidden="true" class="video-play">▶</span></div>
+<div class="video-info"><div><div class="video-index">VIDEO / 02</div><h3 class="video-title">《自我介绍》</h3></div></div>
+</a>
+<a class="video-card" href="https://www.bilibili.com/video/BV1NbQJBoEL8/" rel="noopener noreferrer" target="_blank">
+<div class="video-cover"><img alt="视频作品 03：小角落" src="assets/images/image-022.png"/><span aria-hidden="true" class="video-play">▶</span></div>
+<div class="video-info"><div><div class="video-index">VIDEO / 03</div><h3 class="video-title">大广赛作品《我》</h3></div></div>
+</a>
+</div>
+</div>
+</section>
+<section id="graphic">
+<div class="wrap">
+<div class="section-head reveal">
+<div><div class="section-number">05 / GRAPHIC DESIGN</div><h2>平面作品</h2></div>
+</div>
+<div class="graphic-groups">
+<div class="graphic-group reveal">
+<div class="graphic-group-head">
+<div><div class="graphic-kicker">01 / PHOTOSHOP</div><h3 class="graphic-title">PS 设计作品</h3></div>
+</div>
+<div class="ps-gallery"><div class="ps-column"><article class="graphic-card"><div class="graphic-image"><img alt="PS设计作品：秋分海报" decoding="async" loading="lazy" src="assets/images/image-023.jpg"/></div><div class="graphic-caption"><strong>节气视觉 · 秋分</strong><span>PS / POSTER</span></div></article><article class="graphic-card"><div class="graphic-image"><img alt="PS设计作品：风传花信" decoding="async" loading="lazy" src="assets/images/image-024.jpg"/></div><div class="graphic-caption"><strong>风传花信</strong><span>PS / POSTER</span></div></article></div><div class="ps-column"><article class="graphic-card"><div class="graphic-image"><img alt="PS设计作品：春分海报" decoding="async" loading="lazy" src="assets/images/image-025.jpg"/></div><div class="graphic-caption"><strong>节气视觉 · 春分</strong><span>PS / POSTER</span></div></article><article class="graphic-card"><div class="graphic-image"><img alt="PS设计作品：夏天的诗" decoding="async" loading="lazy" src="assets/images/image-026.jpg"/></div><div class="graphic-caption"><strong>夏天的诗</strong><span>PS / POSTER</span></div></article></div></div>
+</div>
+<div class="graphic-group reveal">
+<div class="graphic-group-head">
+<div><div class="graphic-kicker">02 / CAMPAIGN PROPOSAL</div><h3 class="graphic-title">策划案</h3></div>
+</div>
+<div class="proposal-gallery">
+<article class="graphic-card proposal-card"><div class="graphic-image"><img alt="策划案作品：甄选良品" decoding="async" loading="lazy" src="assets/images/image-027.jpg"/></div><div class="graphic-caption"><strong>甄选良品 · 提案展示</strong><span>CAMPAIGN / PROPOSAL</span></div></article>
+<article class="graphic-card proposal-card"><div class="graphic-image"><img alt="策划案作品：干了这杯自由" decoding="async" loading="lazy" src="assets/images/image-028.jpg"/></div><div class="graphic-caption"><strong>干了这杯自由 · 策划案</strong><span>CAMPAIGN / PROPOSAL</span></div></article>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer" id="contact">
+<div class="wrap reveal">
+<div class="eyebrow" style="color:#777">CONTACT</div>
+<h2 style="font-size:clamp(38px,5vw,68px);line-height:1.16;letter-spacing:.035em;max-width:980px">如果你正在寻找<br/>一个能把想法落地的人。</h2>
+<p style="color:#999;margin-top:36px;line-height:1.9;letter-spacing:.02em">Email：chan_981981@qq.com<br/>小红书：一零零七号森林</p>
+<div class="footer-bottom">
+<span>© 2026 Personal Portfolio</span>
+<span>Designed with clarity, craft &amp; curiosity.</span>
+</div>
+</div>
+</footer>
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) entry.target.classList.add('show');
+    });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Photography hover: subtle 3D response without cropping or resizing the photos.
+  if (window.matchMedia('(pointer:fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.photo-block').forEach(card => {
+      card.addEventListener('pointermove', e => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - .5;
+        const y = (e.clientY - r.top) / r.height - .5;
+        const ry = x * 2.2;
+        const rx = -y * 1.8;
+        card.style.transform = `perspective(1000px) translate3d(0,-8px,0) rotateX(${rx}deg) rotateY(${ry}deg)`;
+      });
+      card.addEventListener('pointerleave', () => {
+        card.style.transform = '';
+      });
+    });
+  }
+</script>
+
+<div class="gallery-modal" id="photoGallery" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="galleryTitle">
+  <div class="gallery-topbar">
+    <div class="gallery-heading"><div class="gallery-kicker">PHOTOGRAPHY / 03</div><div class="gallery-title" id="galleryTitle">Spring / Flower Shadow</div></div>
+    <div class="gallery-actions"><span class="gallery-total">完整组图 · 12 张</span><button class="gallery-close" type="button" aria-label="关闭画廊">×</button></div>
+  </div>
+  <main class="gallery-page">
+    <div class="gallery-intro"><p>花影、侧光与人物轮廓，捕捉春日里柔和而富有层次的光线。</p><div class="gallery-scroll-note">向下滚动浏览全部作品</div></div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </main>
+</div>
+<script>
+(() => {
+  const springImages = ["assets/images/image-029.jpg","assets/images/image-030.jpg","assets/images/image-031.jpg","assets/images/image-032.jpg","assets/images/image-033.jpg","assets/images/image-034.jpg","assets/images/image-035.jpg","assets/images/image-036.jpg","assets/images/image-037.jpg","assets/images/image-038.jpg","assets/images/image-039.jpg","assets/images/image-040.jpg"];
+  const trigger = document.querySelector('[data-gallery="spring-flower-shadow"]');
+  const modal = document.getElementById('photoGallery');
+  const grid = document.getElementById('galleryGrid');
+  const closeButton = modal.querySelector('.gallery-close');
+  let previousFocus = null;
+
+  springImages.forEach((src, index) => {
+    const figure = document.createElement('figure');
+    figure.className = 'gallery-item';
+    const photo = document.createElement('img');
+    photo.src = src;
+    photo.alt = `Spring / Flower Shadow 样片 ${index + 1}`;
+    photo.loading = index < 4 ? 'eager' : 'lazy';
+    photo.decoding = 'async';
+    const caption = document.createElement('figcaption');
+    caption.innerHTML = `<span>SPRING / FLOWER SHADOW</span><span>${String(index + 1).padStart(2,'0')} / ${springImages.length}</span>`;
+    figure.append(photo, caption);
+    grid.appendChild(figure);
+  });
+
+  function openGallery() {
+    previousFocus = document.activeElement;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden','false');
+    modal.scrollTop = 0;
+    document.body.classList.add('gallery-lock');
+    closeButton.focus();
+  }
+  function closeGallery() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.classList.remove('gallery-lock');
+    if (previousFocus) previousFocus.focus();
+  }
+  trigger.addEventListener('click', openGallery);
+  trigger.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openGallery(); } });
+  closeButton.addEventListener('click', closeGallery);
+  document.addEventListener('keydown', event => { if (modal.classList.contains('is-open') && event.key === 'Escape') closeGallery(); });
+})();
+</script>
+
+
+
+<div class="gallery-modal" id="waterGallery" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="waterGalleryTitle">
+  <div class="gallery-topbar">
+    <div class="gallery-heading"><div class="gallery-kicker">PHOTOGRAPHY / 04</div><div class="gallery-title" id="waterGalleryTitle">Water / Stillness</div></div>
+    <div class="gallery-actions"><span class="gallery-total">完整组图 · 11 张</span><button class="gallery-close" type="button" aria-label="关闭花海画廊">×</button></div>
+  </div>
+  <main class="gallery-page">
+    <div class="gallery-intro"><p>湖面、花海与人物之间的安静叙事，在逆光和倒影中保留自然的呼吸感。</p><div class="gallery-scroll-note">向下滚动浏览全部作品</div></div>
+    <div class="gallery-grid" id="waterGalleryGrid"></div>
+  </main>
+</div>
+<script>
+(() => {
+  const waterImages = ["assets/images/image-041.jpg","assets/images/image-042.jpg","assets/images/image-043.jpg","assets/images/image-044.jpg","assets/images/image-045.jpg","assets/images/image-046.jpg","assets/images/image-047.jpg","assets/images/image-048.jpg","assets/images/image-049.jpg","assets/images/image-050.jpg","assets/images/image-051.jpg"];
+  const trigger = document.querySelector('[data-gallery="water-stillness"]');
+  const modal = document.getElementById('waterGallery');
+  const grid = document.getElementById('waterGalleryGrid');
+  const closeButton = modal.querySelector('.gallery-close');
+  let previousFocus = null;
+
+  waterImages.forEach((src, index) => {
+    const figure = document.createElement('figure');
+    figure.className = 'gallery-item';
+    const photo = document.createElement('img');
+    photo.src = src;
+    photo.alt = `Water / Stillness 样片 ${index + 1}`;
+    photo.loading = index < 4 ? 'eager' : 'lazy';
+    photo.decoding = 'async';
+    const caption = document.createElement('figcaption');
+    caption.innerHTML = `<span>WATER / STILLNESS</span><span>${String(index + 1).padStart(2,'0')} / ${waterImages.length}</span>`;
+    figure.append(photo, caption);
+    grid.appendChild(figure);
+  });
+
+  function openGallery() {
+    previousFocus = document.activeElement;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden','false');
+    modal.scrollTop = 0;
+    document.body.classList.add('gallery-lock');
+    closeButton.focus();
+  }
+  function closeGallery() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.classList.remove('gallery-lock');
+    if (previousFocus) previousFocus.focus();
+  }
+  trigger.addEventListener('click', openGallery);
+  trigger.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openGallery(); } });
+  closeButton.addEventListener('click', closeGallery);
+  document.addEventListener('keydown', event => { if (modal.classList.contains('is-open') && event.key === 'Escape') closeGallery(); });
+})();
+</script>
+
+
+<div class="gallery-modal" id="orangeGallery" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="orangeGalleryTitle">
+  <div class="gallery-topbar">
+    <div class="gallery-heading"><div class="gallery-kicker">PHOTOGRAPHY / 05</div><div class="gallery-title" id="orangeGalleryTitle">Orange / Summer Color</div></div>
+    <div class="gallery-actions"><span class="gallery-total">完整组图 · 9 张</span><button class="gallery-close" type="button" aria-label="关闭橘子画廊">×</button></div>
+  </div>
+  <main class="gallery-page">
+    <div class="gallery-intro"><p>高饱和橙色与蓝色形成视觉对撞，用明快色彩记录夏日的生命力。</p><div class="gallery-scroll-note">向下滚动浏览全部作品</div></div>
+    <div class="gallery-grid" id="orangeGalleryGrid"></div>
+  </main>
+</div>
+<script>
+(() => {
+  const orangeImages = ["assets/images/image-052.jpg","assets/images/image-053.jpg","assets/images/image-054.jpg","assets/images/image-055.jpg","assets/images/image-056.jpg","assets/images/image-057.jpg","assets/images/image-058.jpg","assets/images/image-059.jpg","assets/images/image-060.jpg"];
+  const trigger = document.querySelector('[data-gallery="orange-summer-color"]');
+  const modal = document.getElementById('orangeGallery');
+  const grid = document.getElementById('orangeGalleryGrid');
+  const closeButton = modal.querySelector('.gallery-close');
+  let previousFocus = null;
+
+  orangeImages.forEach((src, index) => {
+    const figure = document.createElement('figure');
+    figure.className = 'gallery-item';
+    const photo = document.createElement('img');
+    photo.src = src;
+    photo.alt = `Orange / Summer Color 样片 ${index + 1}`;
+    photo.loading = index < 4 ? 'eager' : 'lazy';
+    photo.decoding = 'async';
+    const caption = document.createElement('figcaption');
+    caption.innerHTML = `<span>ORANGE / SUMMER COLOR</span><span>${String(index + 1).padStart(2,'0')} / ${orangeImages.length}</span>`;
+    figure.append(photo, caption);
+    grid.appendChild(figure);
+  });
+
+  function openGallery() {
+    previousFocus = document.activeElement;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden','false');
+    modal.scrollTop = 0;
+    document.body.classList.add('gallery-lock');
+    closeButton.focus();
+  }
+  function closeGallery() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.classList.remove('gallery-lock');
+    if (previousFocus) previousFocus.focus();
+  }
+  trigger.addEventListener('click', openGallery);
+  trigger.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openGallery(); } });
+  closeButton.addEventListener('click', closeGallery);
+  document.addEventListener('keydown', event => { if (modal.classList.contains('is-open') && event.key === 'Escape') closeGallery(); });
+})();
+</script>
+
+
+<div class="gallery-modal" id="snowGallery" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="snowGalleryTitle">
+  <div class="gallery-topbar">
+    <div class="gallery-heading"><div class="gallery-kicker">PHOTOGRAPHY / 01</div><div class="gallery-title" id="snowGalleryTitle">Snow / Warm Light</div></div>
+    <div class="gallery-actions"><span class="gallery-total">完整组图 · 9 张</span><button class="gallery-close" type="button" aria-label="关闭雪景画廊">×</button></div>
+  </div>
+  <main class="gallery-page">
+    <div class="gallery-intro"><p>夜色、雪花与暖光交织，记录冬日里短暂而真实的温度。</p><div class="gallery-scroll-note">向下滚动浏览全部作品</div></div>
+    <div class="gallery-grid" id="snowGalleryGrid"></div>
+  </main>
+</div>
+<script>
+(() => {
+  const snowImages = ["assets/images/image-061.jpg","assets/images/image-062.jpg","assets/images/image-063.jpg","assets/images/image-064.jpg","assets/images/image-065.jpg","assets/images/image-066.jpg","assets/images/image-067.jpg","assets/images/image-068.jpg","assets/images/image-069.jpg"];
+  const trigger = document.querySelector('[data-gallery="snow-warm-light"]');
+  const modal = document.getElementById('snowGallery');
+  const grid = document.getElementById('snowGalleryGrid');
+  const closeButton = modal.querySelector('.gallery-close');
+  let previousFocus = null;
+
+  snowImages.forEach((src, index) => {
+    const figure = document.createElement('figure');
+    figure.className = 'gallery-item';
+    const photo = document.createElement('img');
+    photo.src = src;
+    photo.alt = `Snow / Warm Light 样片 ${index + 1}`;
+    photo.loading = index < 4 ? 'eager' : 'lazy';
+    photo.decoding = 'async';
+    const caption = document.createElement('figcaption');
+    caption.innerHTML = `<span>SNOW / WARM LIGHT</span><span>${String(index + 1).padStart(2,'0')} / ${snowImages.length}</span>`;
+    figure.append(photo, caption);
+    grid.appendChild(figure);
+  });
+
+  function openGallery() {
+    previousFocus = document.activeElement;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden','false');
+    modal.scrollTop = 0;
+    document.body.classList.add('gallery-lock');
+    closeButton.focus();
+  }
+  function closeGallery() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.classList.remove('gallery-lock');
+    if (previousFocus) previousFocus.focus();
+  }
+  trigger.addEventListener('click', openGallery);
+  trigger.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openGallery(); } });
+  closeButton.addEventListener('click', closeGallery);
+  document.addEventListener('keydown', event => { if (modal.classList.contains('is-open') && event.key === 'Escape') closeGallery(); });
+})();
+</script>
+
+
+<div class="gallery-modal" id="bloomGallery" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="bloomGalleryTitle">
+  <div class="gallery-topbar">
+    <div class="gallery-heading"><div class="gallery-kicker">PHOTOGRAPHY / 07</div><div class="gallery-title" id="bloomGalleryTitle">Bloom / Reflection</div></div>
+    <div class="gallery-actions"><span class="gallery-total">完整组图 · 12 张</span><button class="gallery-close" type="button" aria-label="关闭宝通寺画廊">×</button></div>
+  </div>
+  <main class="gallery-page">
+    <div class="gallery-intro"><p>古寺环境、花枝与人物彼此映照，让自然光影和空间共同参与肖像表达。</p><div class="gallery-scroll-note">向下滚动浏览全部作品</div></div>
+    <div class="gallery-grid" id="bloomGalleryGrid"></div>
+  </main>
+</div>
+<script>
+(() => {
+  const bloomImages = ["assets/images/image-070.jpg","assets/images/image-071.jpg","assets/images/image-072.jpg","assets/images/image-073.jpg","assets/images/image-074.jpg","assets/images/image-075.jpg","assets/images/image-076.jpg","assets/images/image-077.jpg","assets/images/image-078.jpg","assets/images/image-079.jpg","assets/images/image-080.jpg","assets/images/image-081.jpg"];
+  const trigger = document.querySelector('[data-gallery="bloom-reflection"]');
+  const modal = document.getElementById('bloomGallery');
+  const grid = document.getElementById('bloomGalleryGrid');
+  const closeButton = modal.querySelector('.gallery-close');
+  let previousFocus = null;
+
+  bloomImages.forEach((src, index) => {
+    const figure = document.createElement('figure');
+    figure.className = 'gallery-item';
+    const photo = document.createElement('img');
+    photo.src = src;
+    photo.alt = `Bloom / Reflection 样片 ${index + 1}`;
+    photo.loading = index < 4 ? 'eager' : 'lazy';
+    photo.decoding = 'async';
+    const caption = document.createElement('figcaption');
+    caption.innerHTML = `<span>BLOOM / REFLECTION</span><span>${String(index + 1).padStart(2,'0')} / ${bloomImages.length}</span>`;
+    figure.append(photo, caption);
+    grid.appendChild(figure);
+  });
+
+  function openGallery() {
+    previousFocus = document.activeElement;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden','false');
+    modal.scrollTop = 0;
+    document.body.classList.add('gallery-lock');
+    closeButton.focus();
+  }
+  function closeGallery() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.classList.remove('gallery-lock');
+    if (previousFocus) previousFocus.focus();
+  }
+  trigger.addEventListener('click', openGallery);
+  trigger.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openGallery(); } });
+  closeButton.addEventListener('click', closeGallery);
+  document.addEventListener('keydown', event => { if (modal.classList.contains('is-open') && event.key === 'Escape') closeGallery(); });
+})();
+</script>
+
+
+<div class="gallery-modal" id="autumnGallery" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="autumnGalleryTitle">
+  <div class="gallery-topbar">
+    <div class="gallery-heading"><div class="gallery-kicker">PHOTOGRAPHY / 02</div><div class="gallery-title" id="autumnGalleryTitle">Autumn / Low Angle</div></div>
+    <div class="gallery-actions"><span class="gallery-total">完整组图 · 10 张</span><button class="gallery-close" type="button" aria-label="关闭银杏画廊">×</button></div>
+  </div>
+  <main class="gallery-page">
+    <div class="gallery-intro"><p>金黄银杏、湛蓝天空与低机位视角，共同放大秋日色彩和人物姿态。</p><div class="gallery-scroll-note">向下滚动浏览全部作品</div></div>
+    <div class="gallery-grid" id="autumnGalleryGrid"></div>
+  </main>
+</div>
+<script>
+(() => {
+  const autumnImages = ["assets/images/image-082.jpg","assets/images/image-083.jpg","assets/images/image-084.jpg","assets/images/image-085.jpg","assets/images/image-086.jpg","assets/images/image-087.jpg","assets/images/image-088.jpg","assets/images/image-089.jpg","assets/images/image-090.jpg","assets/images/image-091.jpg"];
+  const trigger = document.querySelector('[data-gallery="autumn-low-angle"]');
+  const modal = document.getElementById('autumnGallery');
+  const grid = document.getElementById('autumnGalleryGrid');
+  const closeButton = modal.querySelector('.gallery-close');
+  let previousFocus = null;
+
+  autumnImages.forEach((src, index) => {
+    const figure = document.createElement('figure');
+    figure.className = 'gallery-item';
+    const photo = document.createElement('img');
+    photo.src = src;
+    photo.alt = `Autumn / Low Angle 样片 ${index + 1}`;
+    photo.loading = index < 4 ? 'eager' : 'lazy';
+    photo.decoding = 'async';
+    const caption = document.createElement('figcaption');
+    caption.innerHTML = `<span>AUTUMN / LOW ANGLE</span><span>${String(index + 1).padStart(2,'0')} / ${autumnImages.length}</span>`;
+    figure.append(photo, caption);
+    grid.appendChild(figure);
+  });
+
+  function openGallery() {
+    previousFocus = document.activeElement;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden','false');
+    modal.scrollTop = 0;
+    document.body.classList.add('gallery-lock');
+    closeButton.focus();
+  }
+  function closeGallery() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.classList.remove('gallery-lock');
+    if (previousFocus) previousFocus.focus();
+  }
+  trigger.addEventListener('click', openGallery);
+  trigger.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openGallery(); } });
+  closeButton.addEventListener('click', closeGallery);
+  document.addEventListener('keydown', event => { if (modal.classList.contains('is-open') && event.key === 'Escape') closeGallery(); });
+})();
+</script>
+
+
+<script>
+(() => {
+  const additionalGalleries = [
+    {
+      key:'forest-daylight', id:'forestGallery', gridId:'forestGalleryGrid', number:'06',
+      title:'White / Daylight', total:11, closeLabel:'关闭青年园森林画廊',
+      description:'白色服装与森林自然光相互融合，呈现轻盈、安静且富有空气感的氛围。',
+      caption:'WHITE / DAYLIGHT', images:["assets/images/image-092.jpg","assets/images/image-093.jpg","assets/images/image-094.jpg","assets/images/image-095.jpg","assets/images/image-096.jpg","assets/images/image-097.jpg","assets/images/image-098.jpg","assets/images/image-099.jpg","assets/images/image-100.jpg","assets/images/image-101.jpg","assets/images/image-102.jpg"]
+    },
+    {
+      key:'wisteria-soft-focus', id:'wisteriaGallery', gridId:'wisteriaGalleryGrid', number:'08',
+      title:'Wisteria / Soft Focus', total:11, closeLabel:'关闭紫藤萝画廊',
+      description:'紫色花藤与白裙形成柔焦层次，在前后景之间保留梦幻感与空气感。',
+      caption:'WISTERIA / SOFT FOCUS', images:["assets/images/image-103.jpg","assets/images/image-104.jpg","assets/images/image-105.jpg","assets/images/image-106.jpg","assets/images/image-107.jpg","assets/images/image-108.jpg","assets/images/image-109.jpg","assets/images/image-110.jpg","assets/images/image-111.jpg","assets/images/image-112.jpg","assets/images/image-113.jpg"]
+    },
+    {
+      key:'blue-portrait', id:'cherryGallery', gridId:'cherryGalleryGrid', number:'09',
+      title:'Blue / Portrait', total:8, closeLabel:'关闭樱花画廊',
+      description:'樱花、人物与自然光共同构成柔和肖像，以细腻色彩记录春日情绪。',
+      caption:'BLUE / PORTRAIT', images:["assets/images/image-114.jpg","assets/images/image-115.jpg","assets/images/image-116.jpg","assets/images/image-117.jpg","assets/images/image-118.jpg","assets/images/image-119.jpg","assets/images/image-120.jpg","assets/images/image-121.jpg"]
+    },
+    {
+      key:'black-white-quiet', id:'planeGallery', gridId:'planeGalleryGrid', number:'10',
+      title:'Black & White / Quiet', total:10, closeLabel:'关闭秋天梧桐画廊',
+      description:'秋日梧桐、人物与书本形成克制的画面关系，呈现安静而沉稳的肖像气质。',
+      caption:'BLACK & WHITE / QUIET', images:["assets/images/image-122.jpg","assets/images/image-123.jpg","assets/images/image-124.jpg","assets/images/image-125.jpg","assets/images/image-126.jpg","assets/images/image-127.jpg","assets/images/image-128.jpg","assets/images/image-129.jpg","assets/images/image-130.jpg","assets/images/image-131.jpg"]
+    }
+  ];
+
+  additionalGalleries.forEach(config => {
+    const trigger = document.querySelector(`[data-gallery="${config.key}"]`);
+    const modal = document.createElement('div');
+    modal.className = 'gallery-modal';
+    modal.id = config.id;
+    modal.setAttribute('role','dialog');
+    modal.setAttribute('aria-modal','true');
+    modal.setAttribute('aria-hidden','true');
+    modal.setAttribute('aria-labelledby',`${config.id}Title`);
+    modal.innerHTML = `
+      <div class="gallery-topbar">
+        <div class="gallery-heading"><div class="gallery-kicker">PHOTOGRAPHY / ${config.number}</div><div class="gallery-title" id="${config.id}Title">${config.title}</div></div>
+        <div class="gallery-actions"><span class="gallery-total">完整组图 · ${config.total} 张</span><button class="gallery-close" type="button" aria-label="${config.closeLabel}">×</button></div>
+      </div>
+      <main class="gallery-page">
+        <div class="gallery-intro"><p>${config.description}</p><div class="gallery-scroll-note">向下滚动浏览全部作品</div></div>
+        <div class="gallery-grid" id="${config.gridId}"></div>
+      </main>`;
+    document.body.appendChild(modal);
+
+    const grid = modal.querySelector('.gallery-grid');
+    const closeButton = modal.querySelector('.gallery-close');
+    let previousFocus = null;
+    config.images.forEach((src,index) => {
+      const figure = document.createElement('figure');
+      figure.className = 'gallery-item';
+      const photo = document.createElement('img');
+      photo.src = src;
+      photo.alt = `${config.title} 样片 ${index + 1}`;
+      photo.loading = index < 4 ? 'eager' : 'lazy';
+      photo.decoding = 'async';
+      const caption = document.createElement('figcaption');
+      caption.innerHTML = `<span>${config.caption}</span><span>${String(index + 1).padStart(2,'0')} / ${config.images.length}</span>`;
+      figure.append(photo,caption);
+      grid.appendChild(figure);
+    });
+    function openGallery(){previousFocus=document.activeElement;modal.classList.add('is-open');modal.setAttribute('aria-hidden','false');modal.scrollTop=0;document.body.classList.add('gallery-lock');closeButton.focus()}
+    function closeGallery(){modal.classList.remove('is-open');modal.setAttribute('aria-hidden','true');document.body.classList.remove('gallery-lock');if(previousFocus)previousFocus.focus()}
+    trigger.addEventListener('click',openGallery);
+    trigger.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery()}});
+    closeButton.addEventListener('click',closeGallery);
+    document.addEventListener('keydown',event=>{if(modal.classList.contains('is-open')&&event.key==='Escape')closeGallery()});
+  });
+})();
+</script>
+
+</body>
+</html>
